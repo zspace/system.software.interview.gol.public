@@ -17,3 +17,10 @@ Expected behaviour based on the command line argument is demonstrated below.
 ![gol.exe toad](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/gol.toad.png)
 ![gol.exe beacon](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/gol.beacon.png)
 ![sizes of gol.exe](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/gol.exe.size.png)
+
+
+Once you done with Step 1 you may want to proceed to step 2 described here.
+![GOL client server](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/GOL-client-server.md)
+
+![bin](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/bin) folder contains executables we build.
+ 
