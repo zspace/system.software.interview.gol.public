@@ -25,29 +25,29 @@ Start client.
 3. Server listens on port 6666 and client connects to it. Single client server pair.
 4. Client is capable of sending commands described above to the server. 
    Server replies with the new state of the board for each new command.
-   Here are examples of client server comminication:
+   Here are examples of client server communication:
 
 Client send "*.*" (dot) command:
 
 ![client send "*.*" (dot) command](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/3.gol-client-send-request-dot-command.png)
 
-Cliend sends random init "*R*" command:
+Client sends random init "*R*" command:
 
 ![random init "*R*"](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/4.gol-client-send-random-init-R-command.png)
 
-Cliend sends single step "*S*" command:
+Client sends single step "*S*" command:
 
 ![single step "*S*"](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/5.gol-client-send-step-S-command.png)
 
-Cliend sends flip cell *3C* command:
+Client sends flip cell *3C* command:
 
 ![flip cell *3C*](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/6.gol-client-send-flip-3C-command.png)
 
-Cliend sends flip cells *3D* and *3E* commands:
+Client sends flip cells *3D* and *3E* commands:
 
 ![flip cells *3D* and *3E*](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/7.gol-client-send-flip-3D-3E-commands.png)
 
-Cliend sends GO! command "*G*" command:
+Client sends GO! command "*G*" command:
 
 ![make server go "*G*"](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/8.gol-client-send-go-G-command.png)
 
