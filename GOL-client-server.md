@@ -15,8 +15,11 @@ In our implementation code runs on Windows command line and behaves as desribed 
 2. Upon startup application examines it's name like busybox or toybox does and behaves accordingly.
 
 Start server.
+
 ![start server](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/1.gol-server.png)
+
 Start client.
+
 ![start client](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/2.gol-client.png)
 
 3. Server listens on port 6666 and client connects to it. Single client server pair.
@@ -25,6 +28,7 @@ Start client.
    Here are examples of client server comminication:
 
 Client send "*.*" (dot) command:
+
 ![client send "*.*" (dot) command](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/3.gol-client-send-request-dot-command.png)
 
 Cliend sends random init "*R*" command:
@@ -32,15 +36,19 @@ Cliend sends random init "*R*" command:
 ![random init "*R*"](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/4.gol-client-send-random-init-R-command.png)
 
 Cliend sends single step "*S*" command:
+
 ![single step "*S*"](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/5.gol-client-send-step-S-command.png)
 
 Cliend sends flip cell *3C* command:
+
 ![flip cell *3C*](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/6.gol-client-send-flip-3C-command.png)
 
 Cliend sends flip cells *3D* and *3E* commands:
+
 ![flip cells *3D* and *3E*](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/7.gol-client-send-flip-3D-3E-commands.png)
 
 Cliend sends GO! command "*G*" command:
+
 ![make server go "*G*"](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/8.gol-client-send-go-G-command.png)
 
 After command G (go) server starts running and periodically (once in three seconds in our implementation) send 
