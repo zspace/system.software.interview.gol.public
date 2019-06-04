@@ -62,8 +62,8 @@ re-initializing the board, stopping the running server with "*T*" (stop) command
 *K* kills the server and quits the client.
 Out gol-cs code structure (feel free to have your own):
 
-![gol-cs code structure server](https://https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/gol-server.png)
+![gol-cs code structure server](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/gol-server.png)
 
-![gol-cs code structure client](https://https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/gol-client.png)
+![gol-cs code structure client](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/gol-client.png)
 
 
