@@ -23,3 +23,6 @@ Once you done with Step 1 you may want to proceed to step 2 described here.
 [GOL client server](https://github.com/leo-zspace/cgol.public/blob/master/GOL-client-server.md)
 
 https://github.com/leo-zspace/cgol.public/tree/master/bin folder contains executables we build.
+
+This is zSpace simplistic implementation of GoL code structure:
+![GoL code structure](https://github.com/leo-zspace/cgol.public/blob/master/gol.c.fill-the-blanks.png)
