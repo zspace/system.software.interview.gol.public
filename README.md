@@ -20,7 +20,9 @@ Expected behaviour based on the command line argument is demonstrated below.
 
 
 Once you done with Step 1 you may want to proceed to step 2 described here.
-![GOL client server](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/GOL-client-server.md)
+[GOL client server](https://github.com/leo-zspace/cgol.public/blob/master/GOL-client-server.md)
 
-![bin](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/bin) folder contains executables we build.
- 
+https://github.com/leo-zspace/cgol.public/tree/master/bin folder contains executables we build.
+
+This is zSpace simplistic implementation of GoL code structure:
+![GoL code structure](https://github.com/leo-zspace/cgol.public/blob/master/gol.c.fill-the-blanks.png)
