@@ -16,11 +16,11 @@ In our implementation code runs on Windows command line and behaves as desribed 
 
 Start server.
 
-![start server](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/1.gol-server.png)
+![start server](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/1.gol-server.png)
 
 Start client.
 
-![start client](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/2.gol-client.png)
+![start client](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/2.gol-client.png)
 
 3. Server listens on port 6666 and client connects to it. Single client server pair.
 4. Client is capable of sending commands described above to the server. 
@@ -29,27 +29,27 @@ Start client.
 
 Client send "*.*" (dot) command:
 
-![client send "*.*" (dot) command](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/3.gol-client-send-request-dot-command.png)
+![client send "*.*" (dot) command](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/3.gol-client-send-request-dot-command.png)
 
 Client sends random init "*R*" command:
 
-![random init "*R*"](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/4.gol-client-send-random-init-R-command.png)
+![random init "*R*"](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/4.gol-client-send-random-init-R-command.png)
 
 Client sends single step "*S*" command:
 
-![single step "*S*"](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/5.gol-client-send-step-S-command.png)
+![single step "*S*"](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/5.gol-client-send-step-S-command.png)
 
 Client sends flip cell *3C* command:
 
-![flip cell *3C*](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/6.gol-client-send-flip-3C-command.png)
+![flip cell *3C*](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/6.gol-client-send-flip-3C-command.png)
 
 Client sends flip cells *3D* and *3E* commands:
 
-![flip cells *3D* and *3E*](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/7.gol-client-send-flip-3D-3E-commands.png)
+![flip cells *3D* and *3E*](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/7.gol-client-send-flip-3D-3E-commands.png)
 
 Client sends GO! command "*G*" command:
 
-![make server go "*G*"](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/8.gol-client-send-go-G-command.png)
+![make server go "*G*"](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/8.gol-client-send-go-G-command.png)
 
 After command G (go) server starts running and periodically (once in three seconds in our implementation) send 
 board state and generation number (e.g. 2146> on the screenshot above) to the client.
@@ -62,8 +62,8 @@ re-initializing the board, stopping the running server with "*T*" (stop) command
 *K* kills the server and quits the client.
 Out gol-cs code structure (feel free to have your own):
 
-![gol-cs code structure server](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/gol-server.png)
+![gol-cs code structure server](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/gol-server.png)
 
-![gol-cs code structure client](https://raw.githubusercontent.com/leo-zspace/cgol.public/master/cs/gol-client.png)
+![gol-cs code structure client](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/gol-client.png)
 
 
