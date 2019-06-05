@@ -1,69 +1,82 @@
-# Conway's Game of Life
-simple and straighforward C implementation
+## zSpace Coding Exercise #2:
 
-See README.md for instructions.
+# Conway's Game of Life (GoL) 
+(A Client/Server C Implementation)
 
-Step 2
+Pre-Requisite: Complete [zSpace Coding Exercise #1](https://github.com/leo-zspace/cgol.public/blob/master/README.md), which you will build upon for this exercise.
 
-Using code from step one implement client-server version of Game of Life via TCP/IP stream sockets
-as explained below. Particular port number and protocol is up to you.
+Implement: A client/server version of the Game of Life (GoL) via TCP/IP stream sockets.
 
-You can use any platform (Mac OS, Linux etc).
-In our implementation code runs on Windows command line and behaves as desribed below.
+1. You can use any platform. (e.g. Mac OS, Linux, Windows, etc.)
 
-1. There is single application that is linked to two files gol-server and gol-client.
-2. Upon startup application examines it's name like busybox or toybox does and behaves accordingly.
+1. The particular port number and protocol are up to you.
 
-Start server.
+1. We provide a sample implementation in Windows (linked below) that demonstrates the desired functionality, and which is described below.  Your implementation should strive to follow this behavior.
+
+1. You should produce a single application binary that can be hard-/sym-linked to two names, *gol-server* and *gol-client* on 'nix or *gol-server.exe* and *gol-client.exe* on Windows.
+
+1. Upon startup, the application should introspect its filename and behaves accordingly as a client or as a server (e.g. like busybox or toybox).
+
+1. Starting the server should look like this:
 
 ![start server](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/1.gol-server.png)
 
-Start client.
+1. The server should listen on some port, and accept client connection to it.  You only need to support the case of a single concurrent server.
+
+1. On startup, the client should print out a summary of its commands, and then attempt to connect to the server.  You only need to support the case of a single concurrent client.
 
 ![start client](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/2.gol-client.png)
 
-3. Server listens on port 6666 and client connects to it. Single client server pair.
-4. Client is capable of sending commands described above to the server. 
-   Server replies with the new state of the board for each new command.
-   Here are examples of client server communication:
+1. The client should be capable of sending all the commands summarized above to the server, most of which should be self-evident from the above screenshot.  
 
-Client send "*.*" (dot) command:
+1. The server should be capable of handling all these commands, and then replying back to the client with the resulting state of the board.  
 
-![client send "*.*" (dot) command](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/3.gol-client-send-request-dot-command.png)
+1. When the client receives such board state updates, it should display the board configuration and generation number as shown in the examples below. 
+   
+1. Example of "**.**" command (current state):
 
-Client sends random init "*R*" command:
+![current state "."](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/3.gol-client-send-request-dot-command.png)
 
-![random init "*R*"](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/4.gol-client-send-random-init-R-command.png)
+1. Example of "**R**" command (random init):
 
-Client sends single step "*S*" command:
+![random init "R"](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/4.gol-client-send-random-init-R-command.png)
 
-![single step "*S*"](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/5.gol-client-send-step-S-command.png)
+1. Example of "**S**" command (single step):
 
-Client sends flip cell *3C* command:
+![single step "S"](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/5.gol-client-send-step-S-command.png)
 
-![flip cell *3C*](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/6.gol-client-send-flip-3C-command.png)
+1. Example of "**3C**" command (flip cell '3C'):
+![flip cell 3C](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/6.gol-client-send-flip-3C-command.png)
 
-Client sends flip cells *3D* and *3E* commands:
+1. Example of "**3D**" and "**3E**" commands (flip cell '3D' and '3E'):
+![flip cells 3D and 3E](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/7.gol-client-send-flip-3D-3E-commands.png)
 
-![flip cells *3D* and *3E*](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/7.gol-client-send-flip-3D-3E-commands.png)
+1. The "**G**" (go) command should cause the server begin computing successive generations automatically until explicitly stopped.
 
-Client sends GO! command "*G*" command:
+1. The "**S**" (stop) command should cause the server to halt the periodic computation state engaged via "**G**".  This is the default state at server startup.
 
-![make server go "*G*"](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/8.gol-client-send-go-G-command.png)
+1. While the server is in the "**G**" state, it should periodically (every 3 seconds in our implementation) send the board state to the client. 
 
-After command G (go) server starts running and periodically (once in three seconds in our implementation) send 
-board state and generation number (e.g. 2146> on the screenshot above) to the client.
+1. While the server is in the "**G**" state, the client should display any incoming board state updates. (Note that gap between generation '>2' and '>2146' in the example below.)
 
-Client displays generation number and board state but is capable of still accepting user controls for flipping cells, 
-re-initializing the board, stopping the running server with "*T*" (stop) command and starting it again.
+1. While the server is in the "**G**" state, client and server should still be capable of accepting and dispatching all valid user commands.
 
-*Q* quits the client leaving server running.
+1. Example of "**G**" command (go):
 
-*K* kills the server and quits the client.
-Out gol-cs code structure (feel free to have your own):
+![go "G"](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/8.gol-client-send-go-G-command.png)
 
+1. The "**Q**" command (quit) should disconnect and terminate the client, but leave the server running.
+
+1. The "**K**" command (kill) should terminate the server, and then terminate the client.
+
+You can use this template for Exercise #2 (or roll your own from scratch):
 ![gol-cs code structure server](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/gol-server.png)
-
 ![gol-cs code structure client](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/gol-client.png)
 
+Sample solution binaries can be found here:
+https://github.com/zspace/system.software.interview.gol.public/tree/master/bin
 
+1. We would like you to consider the compactness of your binaries. These are our sample solution sizes:
+![sizes of gol.exe](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol.exe.size.png)
+
+1. Note that we are aware of: https://github.com/konmik/Life and https://github.com/duckythescientist/obfuscatedLife/blob/original/life.c . However, you should strive for *humanly* *readable* C code.
