@@ -19,7 +19,7 @@ Implement: A client/server version of the Game of Life (GoL) via TCP/IP stream s
 
 * Starting the server should look like this:
 
-![start server](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/*gol-server.png)
+![start server](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/1.gol-server.png)
 
 * The server should listen on some port, and accept client connection to it.  You only need to support the case of a single concurrent server.
 
