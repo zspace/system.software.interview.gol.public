@@ -46,9 +46,11 @@ Implement: A client/server version of the Game of Life (GoL) via TCP/IP stream s
 ![single step "S"](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/5.gol-client-send-step-S-command.png)
 
 1. Example of "**3C**" command (flip cell '3C'):
+
 ![flip cell 3C](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/6.gol-client-send-flip-3C-command.png)
 
 1. Example of "**3D**" and "**3E**" commands (flip cell '3D' and '3E'):
+
 ![flip cells 3D and 3E](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/7.gol-client-send-flip-3D-3E-commands.png)
 
 1. The "**G**" (go) command should cause the server begin computing successive generations automatically until explicitly stopped.
@@ -69,14 +71,16 @@ Implement: A client/server version of the Game of Life (GoL) via TCP/IP stream s
 
 1. The "**K**" command (kill) should terminate the server, and then terminate the client.
 
-You can use this template for Exercise #2 (or roll your own from scratch):
+1. You can use this template for Exercise #2 (or roll your own from scratch):
+
 ![gol-cs code structure server](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/gol-server.png)
 ![gol-cs code structure client](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/gol-client.png)
 
-Sample solution binaries can be found here:
+1. Sample solution binaries can be found here:
 https://github.com/zspace/system.software.interview.gol.public/tree/master/bin
 
 1. We would like you to consider the compactness of your binaries. These are our sample solution sizes:
+
 ![sizes of gol.exe](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol.exe.size.png)
 
 1. Note that we are aware of: https://github.com/konmik/Life and https://github.com/duckythescientist/obfuscatedLife/blob/original/life.c . However, you should strive for *humanly* *readable* C code.
