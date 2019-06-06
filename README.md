@@ -8,6 +8,8 @@
   
   * [Exercise #2 - Client/Server GoL](https://github.com/zspace/system.software.interview.gol.public/blob/master/GOL-client-server.md)
 
+* There is no set time limit. One hour should suffice for the first problem, whereas the second might fill an afternoon. But, feel free to take as long as need to produce a quality result. 
+
 * You can use any platform of your choice, e.g. Mac OS, Linux, Windows, etc.
 
 * For reference we provide Windows [sample implementations](https://github.com/zspace/system.software.interview.gol.public/tree/master/bin) of all exercises.
