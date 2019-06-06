@@ -1,7 +1,7 @@
 ## zSpace Coding Exercise #2:
 
 # Conway's Game of Life (GoL) 
-(A Client/Server C Implementation)
+(Client/Server C Implementation)
 
 Pre-Requisite: Complete [zSpace Coding Exercise #1](https://github.com/leo-zspace/cgol.public/blob/master/README.md), which you will build upon for this exercise.
 
@@ -19,13 +19,13 @@ Implement: A client/server version of the Game of Life (GoL) via TCP/IP stream s
 
 * Starting the server should look like this:
 
-![start server](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/1.gol-server.png)
+![start server](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol-cs/1.gol-server.png)
 
 * The server should listen on some port, and accept client connection to it.  You only need to support the case of a single concurrent server.
 
 * On startup, the client should print out a summary of its commands, and then attempt to connect to the server.  You only need to support the case of a single concurrent client.
 
-![start client](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/2.gol-client.png)
+![start client](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol-cs/2.gol-client.png)
 
 * The client should be capable of sending all the commands summarized above to the server, most of which should be self-evident from the above screenshot.  
 
@@ -35,23 +35,23 @@ Implement: A client/server version of the Game of Life (GoL) via TCP/IP stream s
    
 * Example of "**.**" command (current state):
 
-![current state "."](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/3.gol-client-send-request-dot-command.png)
+![current state "."](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol-cs/3.gol-client-send-request-dot-command.png)
 
 * Example of "**R**" command (random init):
 
-![random init "R"](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/4.gol-client-send-random-init-R-command.png)
+![random init "R"](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol-cs/4.gol-client-send-random-init-R-command.png)
 
 * Example of "**S**" command (single step):
 
-![single step "S"](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/5.gol-client-send-step-S-command.png)
+![single step "S"](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol-cs/5.gol-client-send-step-S-command.png)
 
 * Example of "**3C**" command (flip cell '3C'):
 
-![flip cell 3C](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/6.gol-client-send-flip-3C-command.png)
+![flip cell 3C](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol-cs/6.gol-client-send-flip-3C-command.png)
 
 * Example of "**3D**" and "**3E**" commands (flip cell '3D' and '3E'):
 
-![flip cells 3D and 3E](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/7.gol-client-send-flip-3D-3E-commands.png)
+![flip cells 3D and 3E](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol-cs/7.gol-client-send-flip-3D-3E-commands.png)
 
 * The "**G**" (go) command should cause the server begin computing successive generations automatically until explicitly stopped.
 
@@ -65,7 +65,7 @@ Implement: A client/server version of the Game of Life (GoL) via TCP/IP stream s
 
 * Example of "**G**" command (go):
 
-![go "G"](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/8.gol-client-send-go-G-command.png)
+![go "G"](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol-cs/8.gol-client-send-go-G-command.png)
 
 * The "**Q**" command (quit) should disconnect and terminate the client, but leave the server running.
 
@@ -73,8 +73,8 @@ Implement: A client/server version of the Game of Life (GoL) via TCP/IP stream s
 
 * You can use this template for Exercise #2 (or roll your own from scratch):
 
-![gol-cs code structure server](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/gol-server.png)
-![gol-cs code structure client](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/cs/gol-client.png)
+![gol-cs code structure server](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol-cs/gol-server.png)
+![gol-cs code structure client](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol-cs/gol-client.png)
 
 * Sample solution binaries can be found here:
 https://github.com/zspace/system.software.interview.gol.public/tree/master/bin
