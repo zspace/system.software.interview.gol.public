@@ -3,19 +3,17 @@
 # Conway's Game of Life (GoL) 
 (Client/Server C Implementation)
 
-Pre-Requisite: Complete [zSpace Coding Exercise #1](https://github.com/leo-zspace/cgol.public/blob/master/README.md), which you will build upon for this exercise.
+Prerequisite: Complete [Exercise #1 - Trivial GoL](https://github.com/zspace/system.software.interview.gol.public/blob/master/GOL-trivial.md), which you will build upon for this exercise.
 
 Implement: A client/server version of the Game of Life (GoL) via TCP/IP stream sockets.
 
-* You can use any platform. (e.g. Mac OS, Linux, Windows, etc.)
-
 * The particular port number and protocol are up to you.
 
-* We provide a sample implementation in Windows (linked below) that demonstrates the desired functionality, and which is described below.  Your implementation should strive to follow this behavior.
+* We provide a Windows [sample implementation of gol-client.exe and gol-server.exe](https://github.com/zspace/system.software.interview.gol.public/tree/master/bin) that demonstrate the desired functionality, and which is described below.  Your implementation should strive to follow this behavior.
 
 * You should produce a single application binary that can be hard-/sym-linked to two names, *gol-server* and *gol-client* on 'nix or *gol-server.exe* and *gol-client.exe* on Windows.
 
-* Upon startup, the application should introspect its filename and behaves accordingly as a client or as a server (e.g. like busybox or toybox).
+* Upon startup, the application should introspect its filename and behave accordingly as client or server, e.g. like busybox or toybox.
 
 * Starting the server should look like this:
 
@@ -75,12 +73,3 @@ Implement: A client/server version of the Game of Life (GoL) via TCP/IP stream s
 
 ![gol-cs code structure server](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol-cs/gol-server.png)
 ![gol-cs code structure client](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol-cs/gol-client.png)
-
-* Sample solution binaries can be found here:
-https://github.com/zspace/system.software.interview.gol.public/tree/master/bin
-
-* We would like you to consider the compactness of your binaries. These are our sample solution sizes:
-
-![sizes of gol.exe](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol.exe.size.png)
-
-* Note that we are aware of: https://github.com/konmik/Life and https://github.com/duckythescientist/obfuscatedLife/blob/original/life.c . However, you should strive for *humanly* *readable* C code.
