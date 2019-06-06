@@ -20,6 +20,6 @@
 
 * Note that we are aware of: https://github.com/duckythescientist/obfuscatedLife/blob/original/life.c and https://github.com/konmik/Life. However, you should strive for *humanly* *readable* C code.
 
-* Please submit your source code, makefile/project/solution files, and binaries in a zip archive.
+* Please submit your source code, makefile/project/solution files, and binaries in a zip archive, or as a GitHub link.
 
 * Thanks!
