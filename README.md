@@ -1,5 +1,8 @@
 ## zSpace Coding Exercises:
 
+Please do not submit code with TAB formatting, spaces only.
+GitHub "secret" gist submissions appreciated. Thank you.
+
 # Conway's Game of Life (GoL)
 
 * Please complete the following coding exercises:
