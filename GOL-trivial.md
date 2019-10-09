@@ -9,7 +9,7 @@ Implement: A command line version of the Game of Life (GoL) on a 8x8 toroidal gr
 
 * We provide a Windows [sample implementation of gol.exe](https://github.com/zspace/system.software.interview.gol.public/tree/master/bin) that demonstrates the desired functionality, and which is described below.  Your implementation should strive to follow this behavior.
 
-* Expected behaviour using command line arguments is demonstrated below:
+* Expected behaviour using case insesitive command line argument is demonstrated below:
 
 ![gol.exe](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol/gol.random.png)
 ![gol.exe blinker](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol/gol.blinker.png)
