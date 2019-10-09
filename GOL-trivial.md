@@ -20,4 +20,5 @@ Implement: A command line version of the Game of Life (GoL) on a 8x8 toroidal gr
 
 ![GoL code structure](https://github.com/zspace/system.software.interview.gol.public/blob/master/gol/gol.c.fill-the-blanks.png)
 
-* Once you are done with this exercise, proceed to [Exercise #2 - Client/Server GoL](https://github.com/zspace/system.software.interview.gol.public/blob/master/GOL-client-server.md).
+* Once you are done with this exercise it compiles w/o warnings at highest level and runs correctly please send your code (as plain GoL.c file) to system.software.jobs@zspace.com
+* If we like your code we will contact you with further interview processs.
