@@ -1,8 +1,5 @@
 ## zSpace Coding Exercises:
 
-Please do not submit code with TAB formatting, spaces only.
-GitHub "secret" gist submissions appreciated. Thank you.
-
 # Conway's Game of Life (GoL)
 
 * Please complete the following coding exercises:
@@ -23,6 +20,12 @@ GitHub "secret" gist submissions appreciated. Thank you.
 
 * Note that we are aware of: https://github.com/duckythescientist/obfuscatedLife/blob/original/life.c and https://github.com/konmik/Life. However, you should strive for *humanly* *readable* C code.
 
-* Please submit your source code, makefile/project/solution files, and binaries in a zip archive, or as a GitHub link.
+* Please do not submit code with TAB formatting -- spaces only.
 
-* Thanks!
+* Please submit your source code, makefile/project/solution files, and/or binaries in a zip archive, as a GitHub link, or as a bare source file as instructed by the respective exercise page.
+
+We look forward to reading your code:
+
+Leo Kuznetsov - Principle Engineer / Architect  
+Robert Kalnins - Sr. Director of Software / Platform  
+System Software Team - <system.software.jobs@zspace.com>

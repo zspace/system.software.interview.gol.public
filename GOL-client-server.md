@@ -57,7 +57,7 @@ Implement: A client/server version of the Game of Life (GoL) via TCP/IP stream s
 
 * While the server is in the "**G**" state, it should periodically (every 3 seconds in our implementation) send the board state to the client. 
 
-* While the server is in the "**G**" state, the client should display any incoming board state updates. (Note that gap between generation '>2' and '>2146' in the example below.)
+* While the server is in the "**G**" state, the client should display any incoming board state updates. (Note the gap between generation '>2' and '>2146' in the example below.)
 
 * While the server is in the "**G**" state, client and server should still be capable of accepting and dispatching all valid user commands.
 
@@ -73,3 +73,7 @@ Implement: A client/server version of the Game of Life (GoL) via TCP/IP stream s
 
 ![gol-cs code structure server](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol-cs/gol-server.png)
 ![gol-cs code structure client](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol-cs/gol-client.png)
+
+* Once you are proud of your results, please send all your source files, make/project/solution files necessary to build it, and resulting binaries to <system.software.jobs@zspace.com>. We prefer a GitHub repo link, but a zip archive is also acceptable.
+ 
+

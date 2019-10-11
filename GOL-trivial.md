@@ -3,9 +3,9 @@
 # Conway's Game of Life (GoL)
 (Trivial C Implementation)
 
-Read: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
+Read: <https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life>
 
-Implement: A command line version of the Game of Life (GoL) on a 8x8 toroidal grid.
+Implement: A command line version of the Game of Life (GoL) on a 8x8 _toroidal_ grid.
 
 * We provide a Windows [sample implementation of gol.exe](https://github.com/zspace/system.software.interview.gol.public/tree/master/bin) that demonstrates the desired functionality, and which is described below.  Your implementation should strive to follow this behavior.
 
@@ -18,7 +18,8 @@ Implement: A command line version of the Game of Life (GoL) on a 8x8 toroidal gr
 
 * You can use this template for Exercise #1 (or roll your own from scratch):
 
-![GoL code structure](https://github.com/zspace/system.software.interview.gol.public/blob/master/gol/gol.c.fill-the-blanks.png)
+![GoL code structure](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol/gol.c.fill-the-blanks.png)
 
-* Once you are done with this exercise it compiles w/o warnings at highest level and runs correctly please send your code (as plain GoL.c file) to system.software.jobs@zspace.com
-* If we like your code we will contact you with further interview processs.
+* Please ensure that your implementation compiles without any warnings when your toolchain is configured to the highest warning level (e.g. -Wall -Wextra -pedantic-errors or equivalent)
+
+* Once you are proud of the result, please send the _bare_ gol.c source file as an email attachment to <system.software.jobs@zspace.com>
