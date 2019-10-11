@@ -1,4 +1,10 @@
-## zSpace Coding Exercises:
+## zSpace Code Submissions
+
+# Code Samples
+
+* Please have a look at this tiny example of how we like to write our code (<https://tinyurl.com/hashtable-c>). We nearly always work in C like this, and strive to produce work that is as straightforward as possible. We care about aesthetics, uniformity and syntactic safety.  But, we value simplicity and correctness above all. 
+
+* Please provide any example(s) that make you proud (preferably in C).  We encourage sample code in the form of a git repo URL (or other equivalent VCS), but we'll also accept a zip archive if necessary. Send links or attachments to the zSpace System Software Team <system.software.jobs@zspace.com>.
 
 # Conway's Game of Life (GoL)
 
