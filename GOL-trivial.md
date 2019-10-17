@@ -9,7 +9,7 @@ Implement: A command line version of the Game of Life (GoL) on a 8x8 **_toroidal
 
 * We provide a Windows [sample implementation of gol.exe](https://github.com/zspace/system.software.interview.gol.public/tree/master/bin) that demonstrates the desired functionality, and which is described below.  Your implementation should strive to follow this behavior.
 
-* Expected behaviour using **_case insensitive_** command line argument is demonstrated below:
+* Expected behavior using **_case insensitive_** command line argument is demonstrated below:
 
 ![gol.exe](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol/gol.random.png)
 ![gol.exe blinker](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol/gol.blinker.png)
@@ -20,9 +20,9 @@ Implement: A command line version of the Game of Life (GoL) on a 8x8 **_toroidal
 
 ![GoL code structure](https://raw.githubusercontent.com/zspace/system.software.interview.gol.public/master/gol/gol.c.fill-the-blanks.png)
 
-* We value correctness, simplicity, attention to details, code style readability and consistency. 
+* We value correctness, simplicity, readability, consistency, and attention to detail. 
 
-* Sample of our prefered code style is here: (https://tinyurl.com/hashtable-c)
+* A sample of our preferred code style is here: (https://tinyurl.com/hashtable-c)
 
 * Please ensure that your implementation compiles without any warnings when your toolchain is configured to the highest warning level (e.g. -Wall -Wextra -pedantic-errors or equivalent)
 
