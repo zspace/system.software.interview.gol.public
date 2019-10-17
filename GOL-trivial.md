@@ -1,7 +1,7 @@
 ## zSpace Coding Exercise #1:
 
 # Conway's Game of Life (GoL)
-(Trivial C Implementation)
+(Trivial **_C99_** Implementation)
 
 Read: <https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life>
 
@@ -25,5 +25,7 @@ Implement: A command line version of the Game of Life (GoL) on a 8x8 **_toroidal
 * Sample of our prefered code style is here: (https://tinyurl.com/hashtable-c)
 
 * Please ensure that your implementation compiles without any warnings when your toolchain is configured to the highest warning level (e.g. -Wall -Wextra -pedantic-errors or equivalent)
+
+* We appreciate use of C99 (versus K&R C, ANSI C and C89) but not C++.
 
 * Once you are proud of the result, please send the _bare_ gol.c source file as an email attachment to <system.software.jobs@zspace.com>
